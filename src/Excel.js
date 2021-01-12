@@ -72,8 +72,6 @@ class ReactExcel extends React.Component {
                     <ExcelColumn label="satuan" value="satuan" />
                     <ExcelColumn label="barcode" value="barcode" />
 
-                    {/* <ExcelColumn label="Marital Status"
-                        value={(col) => col.is_married ? "Married" : "Single"} /> */}
                 </ExcelSheet>
                 <ExcelSheet data={dataSet2} name="list">
                     <ExcelColumn label="id kategori" value="id_kategori" />

@@ -68,9 +68,9 @@ export default function ImportReact() {
                     component="span">
                     Upload
                 </Button >
-                <Button >
+                {/* <Button >
                     Submit
-                </Button>
+                </Button> */}
             </label>
             <p id="simple-modal-description">
                 Sebelum melakukan Import Data Excel pastikan Format Data Excel sudah sama dengan
@@ -83,14 +83,14 @@ export default function ImportReact() {
 
     return (
         <div>
-            <BasicTable />
+            {/* <BasicTable />
 
-            <ButtonSubmit>Submit Data</ButtonSubmit>
+            <ButtonSubmit>Submit Data</ButtonSubmit> */}
             <button style={btnReport} type="button" onClick={handleOpen}>
                 Membuat Laporan
             </button>
 
-            <GetUser />
+            {/* <GetUser /> */}
             <Modal
                 open={open}
                 onClose={handleClose}

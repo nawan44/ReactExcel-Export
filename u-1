@@ -1,0 +1,36 @@
+import React from "react";
+
+export default class MyComponent extends React.Component {
+  constructor(props) {
+    super(props);
+    this.state = {
+      name: "John"
+    };
+    this.handleNameChange = this.handleNameChange.bind(this);
+  }
+
+  componentDidMount() {
+    document.title = this.state.name;
+  }
+
+  componentDidUpdate() {
+    document.title = this.state.name;
+  }
+
+  handleNameChange(e) {
+    this.setState({
+      name: e.target.value
+    });
+  }
+
+  render() {
+    return (
+      <section>
+        <input 
+          value={this.state.name} 
+          onChange={this.handleNameChange} 
+        />
+      </section>
+    );
+  }
+}

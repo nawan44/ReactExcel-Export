@@ -1,0 +1,22 @@
+import React, { useState, useEffect } from "react";
+
+export default function MyComponent(props) {
+  const [name, setName] = useState("John");
+  
+  useEffect(() => {
+    document.title = name;
+  });
+
+  function handleNameChange(e) {
+    setName(e.target.value);
+  }
+
+  return (
+    <section>
+      <input
+        value={name}
+        onChange={handleNameChange}
+      />
+    </section>
+  );
+}
